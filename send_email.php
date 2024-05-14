@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Failed to send the message. Please try again later.";
         // You can redirect users to an error page or show an error message here
+        echo "Error: " . error_get_last()['message']; // Display any errors
     }
 }
 ?>
